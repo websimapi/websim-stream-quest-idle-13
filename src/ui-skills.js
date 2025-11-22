@@ -57,8 +57,8 @@ export function showSkillDetails(uiManager, skill) {
 
     // Handle header visibility and content
     const headerEl = skillDetails.querySelector('.skill-header');
-    if (skill.id === 'woodcutting') {
-        // Hide redundant header for woodcutting
+    if (skill.id === 'woodcutting' || skill.id === 'scavenging') {
+        // Hide redundant header for woodcutting and scavenging
         if (headerEl) headerEl.style.display = 'none';
     } else {
         // Show and populate header for non-woodcutting skills
